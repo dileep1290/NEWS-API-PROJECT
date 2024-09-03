@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    async function fetchdata(){
+        let response = await fetch("https://newsapi.org/v2/top-headlines?country=us&pageSize=10&apikey=15f87daaf0b04cf795981954eb228bb1");
+        let data = response.json()
+        console.log(data);
+    }
+    
+    fetchdata();
+</script>
